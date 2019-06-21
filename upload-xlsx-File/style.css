@@ -1,0 +1,43 @@
+body {
+    margin: 0;
+    font: 12px Arial, sans-serif;
+    background: #fff5d7;
+}
+
+.form{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+}
+
+.dropField{
+    display: block;
+    background: #E0FEFF;
+    border: 2px dashed grey;
+    color: grey;
+    padding: 30px;
+    font-size: 22px;
+    width: 500px;
+    text-align: center;
+    margin: auto;
+    cursor: pointer;
+}
+
+.dropField span{
+    width: 100px;
+}
+
+#fileUpload{
+    display: none;
+}
+
+.highlight {
+    background: #dddddd;
+}
+
+.not-successful{
+    background: #ADD6E5;
+}
+
