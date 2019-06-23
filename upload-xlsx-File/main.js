@@ -90,12 +90,13 @@ function uploadFiles(resultArr) {
 
     let url = 'http://193.243.158.230:4500/api/import';
     fetch(url, {
-        method: 'POST',
-        body: {
+        method: 'post',
+        body: JSON.stringify({
             resultArray: resultArr,
-        },
+        }),
         headers: {
-            'Authorization': 'test-task/Object'
+            'Authorization': 'test-task',
+            'Content-Type': 'application/json'
         }
     })
         .then(function(response) {
